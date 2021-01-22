@@ -1,0 +1,26 @@
+<div>
+  <h1>Deseja falar comigo?</h1>
+  <h2>E-mail | Telefone</h2>
+  <p>felipehscbr@gmail.com | +55 15 99196-7927</p>
+
+  <h2>Envie seu contato para mim</h2>
+
+  <%= form_with model: @contact, method: :post do |form| %>
+    <div>
+      <%= form.label :name %>
+      <%= form.text_field :name %>
+    </div>
+
+    <div>
+      <%= form.label :email %>
+      <%= form.email_field :email %>
+    </div>
+
+    <div>
+      <%= form.label :message %>
+      <%= form.text_field :message, type: :textarea %>
+    </div>
+
+    <%= form.submit 'Enviar' %>
+  <% end %>
+</div>

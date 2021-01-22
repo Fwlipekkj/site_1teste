@@ -1,0 +1,17 @@
+div h1, h2{
+  display: block;
+  background-color: LightPink;
+  padding: 2em;
+  background: -moz-linear-gradient(top, #FFC0CB, LightPink);
+  line-height: 1.16;
+  font-size: 2rem;
+  color: #1C1C1C;
+}
+
+h2{
+  padding-left: 5cm;
+}
+
+body{
+  background-color: -moz-linear-gradient(top, white, #F8F8FF);
+}
